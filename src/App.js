@@ -1,25 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import LocalTempo from './tempo';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="App" >
+      <h2>Descubra a temperatura da sua cidade</h2>
+      <LocalTempo></LocalTempo>
+      <img className="termoFrio" src="https://cdn-icons-png.flaticon.com/512/1247/1247790.png" height='250rem' width="250rem"></img>
+      <img className="termoQuente" src="https://cdn-icons-png.flaticon.com/512/427/427237.png" height='250rem' width="250rem"></img>
+    </div>    
   );
 }
-
+ 
 export default App;
